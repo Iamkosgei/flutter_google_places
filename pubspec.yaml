@@ -5,6 +5,8 @@ homepage: https://github.com/lejard-h/flutter_google_places
 author: Hadrien Lejard (@lejard-h)
 maintainer: Kevin Morelli (@KevMorelli)
 
+publish_to: none
+
 environment:
   sdk: ">=2.0.0 <3.0.0"
 
@@ -13,10 +15,12 @@ dependencies:
     sdk: flutter
 
   google_api_headers: ">=0.1.0 <1.0.0"
-  google_maps_webservice: ^0.0.19
   http: ">=0.11.0 <1.0.0"
   rxdart: ^0.25.0
-
+  
+  google_maps_webservice:
+    git:
+      url: https://github.com/Iamkosgei/google_maps_webservice
 dev_dependencies:
   flutter_test:
     sdk: flutter
